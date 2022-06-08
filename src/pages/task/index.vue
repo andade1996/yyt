@@ -1,16 +1,22 @@
 <template>
-  <div class="template-m-wrap">
-    {{ count }}
-    <br />
-    <button @click="click">加 1</button>
+  <div class="tabs">
+    <not-tice-bar/>
+    <tabs/>
   </div>
+
 </template>
 <script>
+import NotTiceBar from "./subMoudel/NotTiceBar";
+import Tabs from "./subMoudel/Tabs";
 export default {
   name: "TemplateM",
+  components:{
+    NotTiceBar,
+    Tabs
+  },
   data() {
     return {
-      count: 0,
+      tabValue:''
     };
   },
   methods: {
@@ -20,3 +26,11 @@ export default {
   },
 };
 </script>
+<style lang="scss">
+.tabs{
+    .active{
+      color: #1E90FF !important;
+    }
+
+}
+</style>
