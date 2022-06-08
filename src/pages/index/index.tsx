@@ -23,9 +23,8 @@ export default {
       return (
           <View>
             <View>
-              <Text>{state.msg}</Text>
+              <Text>我人直接裂开了</Text>
             </View>
-            <Button onTouchstart={() => handleClick(state.msg2)}>Confirm</Button>
           </View>
       )
     }
